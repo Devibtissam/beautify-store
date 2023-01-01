@@ -1,0 +1,42 @@
+.navbar{
+    padding: 1rem 0;
+    h1{
+        text-transform: capitalize;
+    }
+    &__wrapper{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__icons > a{
+        position: relative;
+        margin-left: 1.75rem;
+        cursor: pointer;
+        color: var(--vermilion-300);
+
+        span{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: var(--vermilion-300);
+            color: white;
+            display: grid;
+            place-items: center;
+            justify-items: center;
+            border-radius: 50%;
+            bottom: 15px;
+            right: -8px;
+            font-size: 0.75rem;
+            font-weight: var(--fw-700);
+        }
+    }
+    &__search{
+        border-bottom: 2px solid var(--vermilion-300);
+        padding: .5rem 0.125rem;
+        width: 210px;
+        &::placeholder{
+            text-indent: 100px;
+           
+        }
+    }
+}

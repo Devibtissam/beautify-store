@@ -1,0 +1,69 @@
+.nav{
+    &__logo{
+        display: flex;
+        justify-content: center;
+        padding: .25rem;
+    }
+    
+}
+
+.header{
+
+    padding-block: 5rem;
+    &__title{
+    font-size: 3rem;
+    font-family: var(--ff-1);
+    letter-spacing: 2px;
+    animation-name: movedown;
+    animation-duration: 2s;
+    margin-bottom: 2.75rem;
+    }
+
+    &__imgs{
+        width: 250px;
+        display: none;
+    }
+
+    @media (min-width: 850px){
+        &__titles{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            z-index: 2;
+            max-width: 75%;
+            margin-inline: auto;
+            transform: translateY(50%);
+        }
+        &__imgs{
+            display: block;
+            position: absolute;
+            z-index: -1;
+            & > * {
+             animation-name: fadeIn;
+             animation-duration: 10s;
+             }
+
+
+        }
+        &-right{
+            top: 200px;
+            right: 2rem;
+            bottom: 3.5rem;
+            
+        }
+    }
+
+    @media (min-width: 1300px){
+        .container{
+            max-width: 1200px;
+        }
+        .header{
+            &__title{
+                font-size: 3.75rem;
+                letter-spacing: 5px;
+            }
+        }
+    }
+
+}
+

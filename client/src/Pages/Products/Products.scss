@@ -1,0 +1,30 @@
+.search{
+    @media (min-width: 850px){
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.products{
+    display: flex;
+    flex-flow: row wrap;
+    // justify-content: center;
+    gap: 1%;
+    & > * {
+        cursor: pointer;
+        flex-basis: 49.5%;
+        animation-name: movedown;
+        animation-duration: 2s;
+        margin-bottom: 2rem;
+
+        @media (min-width: 680px){
+            flex-basis: 32.6666%;
+
+        }
+        @media (min-width: 850px){
+            flex-basis: 24.25%;
+        }
+
+
+    }
+}

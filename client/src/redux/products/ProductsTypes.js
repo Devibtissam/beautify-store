@@ -1,0 +1,5 @@
+// export const FETCH_PRODUCTS = 'FETCH_PRODUCTS';
+export const FETCH_SUCCEED = 'FETCH_SUCCEED';
+export const FETCH_FAILED = 'FETCH_FAILED';
+export const CHANGE_CATEGORY = 'CHANGE_CATEGORY';
+
